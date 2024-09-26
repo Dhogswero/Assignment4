@@ -111,32 +111,35 @@
             // 
             // dataGridView1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 125);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(375, 346);
-            dataGridView1.TabIndex = 8;
-            // 
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
+
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 125);  // Adjust as per your layout
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(375, 346);  // Adjust size as needed
+            this.dataGridView1.TabIndex = 8;
+            //
             // Form3
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 516);
-            Controls.Add(dataGridView1);
-            Controls.Add(invoiceCost);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(invoice);
-            Controls.Add(custNumber);
-            Controls.Add(custEmailAddress);
-            Controls.Add(custDetails);
-            Name = "Form3";
-            Text = "Form3";
-            Load += Form3_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new SizeF(7F, 15F);
+            this.AutoScaleMode = AutoScaleMode.Font;
+            this.ClientSize = new Size(800, 516);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(invoiceCost);
+            this.Controls.Add(label3);
+            this.Controls.Add(label2);
+            this.Controls.Add(label1);
+            this.Controls.Add(invoice);
+            this.Controls.Add(custNumber);
+            this.Controls.Add(custEmailAddress);
+            this.Controls.Add(custDetails);
+            this.Name = "Form3";
+            this.Text = "Form3";
+            this.Load += Form3_Load;
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
         }
 
         #endregion
