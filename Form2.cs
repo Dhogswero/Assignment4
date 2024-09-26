@@ -207,9 +207,8 @@ namespace WinFormsApp1
         private void invButton_Click(object sender, EventArgs e)
         {
             // Hope msiza 62803050
-
             // 2D array
-            string[,] clothingArray = getInfoClothing();
+             string[,] clothingArray = getInfoClothing();
             string[,] sizeArray = getInfoSize();
             string[,] materialArray = getInfoMaterial();
             string[,] extraArray = getInfoExtra();
